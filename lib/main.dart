@@ -140,6 +140,7 @@ class _BanditoWork extends State<BanditoWork> {
           textAlign: TextAlign.center,
         ),
       ),
+      //backgroundColor: ,
       body: Container(
         color: isJackpot() ? Colors.yellow : Colors.red,
         child: Column(
@@ -154,7 +155,9 @@ class _BanditoWork extends State<BanditoWork> {
             ),
             Text(
               winnerTextEditor(),
-              style: const TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: isJackpot() ? 150 : 60,
+                  fontWeight: FontWeight.bold),
             ),
           ],
         ),
